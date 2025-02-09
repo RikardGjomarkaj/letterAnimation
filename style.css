@@ -1,0 +1,130 @@
+/* Apply a futuristic cyberpunk theme */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0D0208;
+    color: #00FF41;
+    font-family: 'Orbitron', sans-serif; /* Adds a futuristic font */
+    margin: 0;
+}
+
+/* Glowing text effect for the heading */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #00FF41;
+    text-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41, 0 0 40px #008F11;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Description text */
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 600px;
+    color: #00FF41;
+}
+
+/* Center the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+/* Shared styles for input and buttons */
+.input-btn {
+    padding: 12px;
+    border: 2px solid #00FF41;
+    background: transparent;
+    color: #00FF41;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 10px; /* Space from heading */
+}
+
+input.input-btn{
+    width: 100%;
+}
+/* Glowing input field */
+input.input-btn {
+    border-radius: 8px;
+}
+
+/* Button container to align buttons horizontally */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Styled buttons */
+button.input-btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #00FF41;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button.input-btn:hover {
+    background: #00FF41;
+    color: black;
+    box-shadow: 0 0 20px #00FF41;
+    transform: scale(1.05);
+}
+
+/* Button active effect */
+button.input-btn:active {
+    transform: scale(0.95);
+}
+
+/* Clear Button Styling (Different Color) */
+.clear-btn {
+    border-color: #FF3131;
+    color: #FF3131;
+    box-shadow: 0 0 10px #FF3131;
+}
+
+.clear-btn:hover {
+    background: #FF3131;
+    color: black;
+    box-shadow: 0 0 20px #FF3131;
+}
+
+/* Output Display */
+#output {
+    height: 50vh;
+    width: 80%;
+    max-width: 600px;
+    overflow-y: auto;
+    background: rgba(0, 255, 65, 0.1);
+    border: 2px solid #00FF41;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: pre-line;
+    box-shadow: 0 0 15px #00FF41;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Keyframe animation for glowing text */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00FF41, 0 0 20px #00FF41;
+    }
+    to {
+        text-shadow: 0 0 20px #00FF41, 0 0 30px #008F11;
+    }
+}
