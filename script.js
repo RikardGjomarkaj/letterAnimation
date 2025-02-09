@@ -53,4 +53,5 @@ document.getElementById("myInput").addEventListener("keypress", function(event) 
     if (event.key === "Enter") {
         event.preventDefault(); 
         loopWithDelay(); 
+    }
 });
